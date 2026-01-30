@@ -119,16 +119,21 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:col-span-1 md:justify-self-center">
-           
-          </div>
-
-          {/* Contact Info */}
-           <div className="md:col-span-1 md:justify-self-center">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li><Link href="#features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link href="#how-it-works" className="hover:text-white transition-colors">How it Works</Link></li>
               <li><Link href="#sports" className="hover:text-white transition-colors">Supported Sports</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="md:col-span-1 md:justify-self-end">
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li>Email: james@maitclub.com</li>
+             
+
             </ul>
           </div>
         </div>
