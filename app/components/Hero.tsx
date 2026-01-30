@@ -29,7 +29,7 @@ export default function Hero() {
       });
 
       if (response.ok) {
-        toast.success("🎉 Successfully subscribed!");
+        toast.success("Successfully subscribed!");
         setSuccessMessage("✓ Successfully subscribed! Check your inbox.");
         setEmail("");
       } else if (response.status === 400) {

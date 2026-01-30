@@ -27,7 +27,7 @@ export default function CTA() {
       });
 
       if (response.ok) {
-        toast.success("🎉 Successfully subscribed! We'll keep you updated.");
+        toast.success("Successfully subscribed! We'll keep you updated.");
         setSuccessMessage("✓ Successfully subscribed! Check your inbox.");
         setEmail("");
       } else if (response.status === 400) {
