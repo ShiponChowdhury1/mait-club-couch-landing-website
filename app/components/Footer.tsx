@@ -141,7 +141,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm">
-            © 2026 Mait Club. All rights reserved.
+           © {new Date().getFullYear()} Mait Club. All rights reserved.
           </p>
         </div>
       </div>
