@@ -7,12 +7,14 @@ import { toast } from "react-toastify";
 export default function CTA() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setLoading(true);
+    setSuccessMessage("");
 
     try {
       const response = await fetch(process.env.NEXT_PUBLIC_SUBSCRIBE_URL!, {
@@ -26,6 +28,7 @@ export default function CTA() {
 
       if (response.ok) {
         toast.success("🎉 Successfully subscribed! We'll keep you updated.");
+        setSuccessMessage("✓ Successfully subscribed! Check your inbox.");
         setEmail("");
       } else if (response.status === 400) {
         toast.warning("You are already subscribed!");
@@ -73,9 +76,15 @@ export default function CTA() {
             {loading ? "Subscribing..." : "Subscribe"}
           </button>
         </form>
-        <p className="text-sm text-[#141414">
-          🔒 We respect your privacy. No spam, ever. Only launch updates and early access info.
-        </p>
+        {successMessage ? (
+          <p className="text-sm text-green-600 font-medium mb-2">
+            {successMessage}
+          </p>
+        ) : (
+          <p className="text-sm text-[#141414">
+            🔒 We respect your privacy. No spam, ever. Only launch updates and early access info.
+          </p>
+        )}
       </div>
     </section>
   );
