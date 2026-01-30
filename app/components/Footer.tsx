@@ -58,9 +58,9 @@ export default function Footer() {
         priority
       />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 md:justify-items-center">
           {/* Logo & Description */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 md:justify-self-start">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
                 src={logo}
@@ -118,21 +118,17 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 md:justify-self-center">
+           
+          </div>
+
+          {/* Contact Info */}
+           <div className="md:col-span-1 md:justify-self-center">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li><Link href="#features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link href="#how-it-works" className="hover:text-white transition-colors">How it Works</Link></li>
               <li><Link href="#sports" className="hover:text-white transition-colors">Supported Sports</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="md:col-span-1">
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li>Email: hello@maitclub.com</li>
-              <li>Support: support@maitclub.com</li>
             </ul>
           </div>
         </div>
