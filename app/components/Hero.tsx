@@ -84,7 +84,7 @@ export default function Hero() {
                   disabled={loading}
                   className="bg-[#0F744F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#0a5a3d] transition-colors whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Subscribing..." : "Subscribe"}
+                  {loading ? "Subscribing..." : "Join the Waitlist"}
                 </button>
               </form>
               {successMessage ? (

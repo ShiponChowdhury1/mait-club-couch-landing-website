@@ -75,13 +75,13 @@ export default function Navbar() {
               Sports Support
             </Link>
             <Link onClick={() => setIsOpen(false)} href="#subscribe" className="bg-[#0F744F] text-white px-6 py-2 rounded-[10px] font-medium hover:bg-[#0a5a3d] transition-colors md:hidden">
-              Subscribe
+             Join the Waitlist
             </Link>
           </div>
 
 
           <Link onClick={() => setIsOpen(false)} href="#subscribe" className="bg-[#0F744F] text-white px-6 py-2 rounded-[10px] font-medium hover:bg-[#0a5a3d] transition-colors hidden md:block">
-            Subscribe
+         Join the Waitlist
           </Link>
 
 

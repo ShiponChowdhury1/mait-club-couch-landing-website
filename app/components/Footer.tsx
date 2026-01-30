@@ -58,9 +58,9 @@ export default function Footer() {
         priority
       />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-20 md:gap-0 justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           {/* Logo & Description */}
-          <div>
+          <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
                 src={logo}
@@ -105,7 +105,7 @@ export default function Footer() {
                 disabled={loading}
                 className="bg-[#0F744F] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#0a5a3d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? "..." : "Subscribe"}
+                {loading ? "..." : "Join the Waitlist"}
               </button>
             </form>
             {successMessage ? (
@@ -118,7 +118,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="md:col-span-1">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li><Link href="#features" className="hover:text-white transition-colors">Features</Link></li>
@@ -127,14 +127,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* App Store Links */}
-          <div>
-            
+          {/* Contact Info */}
+          <div className="md:col-span-1">
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li>Email: hello@maitclub.com</li>
+              <li>Support: support@maitclub.com</li>
+            </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 text-center">
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500 text-sm">
             © 2026 Mait Club. All rights reserved.
           </p>
