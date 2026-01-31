@@ -131,7 +131,7 @@ export default function Footer() {
           <div className="md:col-span-1 md:justify-self-end">
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li>Email: james@maitclub.com</li>
+              <li>james@maitclub.com</li>
              
 
             </ul>
