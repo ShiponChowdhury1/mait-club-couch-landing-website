@@ -91,19 +91,19 @@ export default function Footer() {
             </div>
 
             {/* Newsletter in footer */}
-            <form onSubmit={handleSubscribe} className="flex gap-2">
+            <form onSubmit={handleSubscribe} className="flex md:flex-row flex-col gap-2">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 px-3 py-2 bg-[#1E2939] border border-gray-700 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0F744F] focus:border-transparent"
+                className="flex-1 px-3 md:py-2 py-3 bg-[#1E2939] border border-gray-700 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0F744F] focus:border-transparent"
                 required
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-[#0F744F] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#0a5a3d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-[#0F744F] text-white px-4 md:py-2 py-3 rounded-lg text-sm font-medium hover:bg-[#0a5a3d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? "..." : "Join the Waitlist"}
               </button>
@@ -131,9 +131,7 @@ export default function Footer() {
           <div className="md:col-span-1 md:justify-self-end">
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li>james@maitclub.com</li>
-             
-
+              <li>admin@maitclub.com</li>
             </ul>
           </div>
         </div>
