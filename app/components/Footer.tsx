@@ -91,7 +91,7 @@ export default function Footer() {
             </div>
 
             {/* Newsletter in footer */}
-            <form onSubmit={handleSubscribe} className="flex md:flex-row flex-col gap-2">
+            <form onSubmit={handleSubscribe} className="flex md:flex-row flex-col md:gap-2 gap-3">
               <input
                 type="email"
                 value={email}
