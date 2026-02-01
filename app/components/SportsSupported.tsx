@@ -28,7 +28,7 @@ export default function SportsSupported() {
     {
       icon: image8,
       name: "Cricket",
-      description: "Serve & ground strokes"
+      description: "Bat and Ball Technique"
     },
     {
       icon: image7,
@@ -38,7 +38,7 @@ export default function SportsSupported() {
     {
       icon: image2,
       name: "Tennis",
-      description: "Track and Field"
+      description: "Serve Fundamentals and Ground strokes"
     },
     {
       icon: image6,

@@ -4,22 +4,25 @@ export default function RealResults() {
   const testimonials = [
     {
       nameTag: "M",
-      quote: "After just one month on Mait Club I dropped my handicap by 4 shots in a month. I've been playing golf for 20 years and never had this much improvement.",
+      quote:
+        "After just one month on Mait Club I dropped my handicap by 4 shots in a month. I've been playing golf for 20 years and never had this much improvement.",
       name: "John Mitchell",
-      sport: "Golf"
+      sport: "Golf",
     },
     {
       nameTag: "J",
-      quote: "I'm finally starting to beat some of my teammates at our social basketball nights, they think I've been getting secret 1 on 1 coaching.",
+      quote:
+        "I'm finally starting to beat some of my teammates at our social basketball nights, they think I've been getting secret 1 on 1 coaching.",
       name: "Jane Rodriguez",
-      sport: "Basketball"
+      sport: "Basketball",
     },
     {
       nameTag: "K",
-      quote: "I played my first tournament since joining Mait Club and I have never felt more confident in my technique and play.",
+      quote:
+        "I player my first tournament since joining Mait Club and I have never felt more confident in my technique and play.",
       name: "Marcus Chen",
-      sport: "Tennis"
-    }
+      sport: "Tennis",
+    },
   ];
 
   return (
@@ -41,10 +44,13 @@ export default function RealResults() {
               className="bg-white p-6 rounded-2xl border border-[#D4D4D4] shadow-sm hover:shadow-md transition-shadow space-y-4 relative"
             >
               <div className="absolute top-3 right-3">
-                <FaQuoteRight size={25} className="text-[#00786F33]"/>
+                <FaQuoteRight size={25} className="text-[#00786F33]" />
               </div>
-              <div className="bg-[#028479] rounded-full p-3 text-white capitalize size-14 flex justify-center items-center">
-                <p className="text-2xl">{testimonial.nameTag}</p>
+              <div className="flex items-center gap-5">
+                <div className="bg-[#028479] rounded-full p-3 text-white capitalize size-14 flex justify-center items-center">
+                  <p className="text-2xl">{testimonial.nameTag}</p>
+                </div>
+                <h3 className="text-xl font-bold text-[#067F6C]">Verified User</h3>
               </div>
 
               <p className="text-[#1D1D1D] text-[17px] leading-relaxed">
@@ -52,7 +58,9 @@ export default function RealResults() {
               </p>
 
               <div className="">
-                <p className="font-bold text-[#018278] text-[18px]">{testimonial.name}</p>
+                <p className="font-bold text-[#018278] text-[18px]">
+                  {testimonial.name}
+                </p>
                 <p className="text-[#0F744F] text-sm">{testimonial.sport}</p>
               </div>
             </div>

@@ -14,27 +14,27 @@ export default function KeyFeatures() {
     {
       icon: SlEnergy,
       title: "Frame-by-Frame Analysis",
-      description: "Our AI dissects your movement frame by frame, pinpointing the microscopic flaws in your mechanics that the human eye misses. It's like having a high speed lab in your pocket."
+      description: "Our AI dissects your movement frame-by-frame, pinpointing the microscopic flaws in your mechanics that the human eye misses. It’s like having a high-speed lab in your pocket."
     },
     {
       icon: LuTarget,
       title: "Personalized Training Plan",
-      description: "No more generic YouTube tutorials. Mait Club builds a dynamic training plan specifically for your sport, serving up the exact drills you need to turn your biggest weaknesses into your greatest strengths."
+      description: "No more generic YouTube tutorials. Mait Club builds a dynamic training plan specifically for your game, serving up the exact drills you need to turn your biggest weaknesses into your greatest strengths."
     },
     {
       icon: IoBarChartOutline,
       title: "Weekly Progress Tracking",
-      description: "Watch your improvement from session to session. Track your 'first attempts', monitor your rising averages, and see exactly how you did the work than you were last month."
+      description: "Visualize your journey from amateur to elite. Track your \"hot streaks,\" monitor your rising averages, and see exactly how much better you are this week than you were last month."
     },
     {
       icon: LuVideo,
       title: "Instant Video Access",
-      description: "Never lose a breakthrough moment again. Instantly access your full library of past performances to see how far you've come and stay connected to your progress wherever you go."
+      description: "Never lose a breakthrough moment again. Instantly access your full library of past performances to review your growth and stay connected to your progress wherever you go."
     },
     {
       icon: FiUsers,
       title: "Compare Performance",
-      description: "Overlay your video directly against a professional's to see exactly where your angles, timing, and efficiency differ. It's the ultimate visual roadmap to elite technique."
+      description: "Overlay your video directly against a professional’s to see exactly where your angles, timing, and posture differ. It’s the ultimate visual roadmap to an elite technique."
     }
   ];
 

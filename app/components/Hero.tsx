@@ -92,7 +92,7 @@ export default function Hero() {
                   {successMessage}
                 </p>
               ) : (
-                <p className="text-xs text-gray-400 mt-2">🔒 We respect your privacy. No spam, ever. Only launch updates and early access info.</p>
+                <p className="text-xs text-gray-400 mt-2">No spam. Only launch updates.</p>
               )}
             </div>
           </div>

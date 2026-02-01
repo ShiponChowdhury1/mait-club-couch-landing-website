@@ -41,7 +41,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-linear-to-r from-[#F2DED5] via-[#F9F9F9] to-[#D5E3E3] backdrop-blur-xs py-1 md:py-3 fixed top-0 left-0 right-0 z-500">
+    <nav className="bg-linear-to-r from-[#F2DED5] via-[#F9F9F9] to-[#D5E3E3] py-1 md:py-3 fixed top-0 left-0 right-0 z-500 backdrop-blur-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-0">
         <div className="flex justify-between items-center">
           {/* Logo */}

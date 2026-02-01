@@ -9,17 +9,17 @@ export default function HowItWorks() {
     {
       icon: <FiUpload />,
       title: "Upload Your Video",
-      description: "Record and/or upload a clip of your chosen movement. Our AI instantly begins analysing your performance to find your edge."
+      description: "Record and/or upload a clip of your chosen movement. Our AI instantly begins analysing your mechanics to find your edge."
     },
     {
       icon: <LuBrain />,
       title: "Get AI Score & Feedback",
-      description: "Receive an objective performance score and a report by frame breakdown of your technical strengths and hidden flaws."
+      description: "Receive an objective performance score and a frame-by-frame breakdown of your technical strengths and hidden flaws."
     },
     {
       icon: <FaArrowTrendUp />,
       title: "Train & Track Progress",
-      description: "Receive a custom built training plan and track your progression as your scores climb toward greater levels."
+      description: "Receive a custom-built training plan and track your progression as your scores climb toward greater levels."
     }
   ];
 
@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 <p className="absolute bg-white border-2 border-[#0F744F] rounded-full -top-3 size-6 md:size-7 text-xs md:text-sm font-semibold flex items-center justify-center">{index + 1}</p>
               </div>
               <h3 className="text-xl md:text-2xl font-semibold text-white mb-2 md:mb-3">{step.title}</h3>
-              <p className="text-white text-sm leading-relaxed max-w-xs mx-auto px-4 md:px-0">
+              <p className="text-white text-[16px] leading-relaxed max-w-xs mx-auto px-4 md:px-0">
                 {step.description}
               </p>
             </div>
