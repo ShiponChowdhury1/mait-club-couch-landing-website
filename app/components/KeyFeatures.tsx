@@ -50,11 +50,11 @@ export default function KeyFeatures() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-x-visible">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-[14px] border border-[#D5D5D5] hover:shadow-lg transition-shadow"
+              className="bg-white p-4 rounded-[14px] border border-[#D5D5D5] hover:shadow-lg transition-shadow min-w-[300px] snap-center md:min-w-0"
             >
               <div className="w-12 h-12 bg-[#00786F1A] rounded-xl flex items-center justify-center mb-4">
                 <feature.icon className="text-[#0F744F]" size={24} />

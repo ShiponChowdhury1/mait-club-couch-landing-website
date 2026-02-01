@@ -47,3 +47,14 @@ div[id] {
 ::-webkit-scrollbar-thumb:hover {
   background: #0a5a3d;
 }
+
+/* Hide scrollbar for horizontal scroll on mobile */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

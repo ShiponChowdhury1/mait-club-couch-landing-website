@@ -64,11 +64,11 @@ export default function SportsSupported() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-4 md:overflow-x-visible">
           {sports.map((sport, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl border border-[#D4D4D4] hover:border-[#0F744F] hover:shadow-lg transition-all group"
+              className="bg-white p-6 rounded-2xl border border-[#D4D4D4] hover:border-[#0F744F] hover:shadow-lg transition-all group w-[250px] shrink-0 snap-center md:w-auto"
             >
               <div className="flex justify-center items-center w-full">
                 <Image src={sport.icon} alt={sport.name} className="size-22"/>
