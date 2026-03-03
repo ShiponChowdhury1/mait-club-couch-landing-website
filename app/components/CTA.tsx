@@ -82,7 +82,7 @@ export default function CTA() {
           </p>
         ) : (
           <p className="text-sm text-[#141414">
-            🔒 We respect your privacy. No spam, ever. Only launch updates and early access info.
+             Only launch updates and early access info.
           </p>
         )}
       </div>

@@ -12,6 +12,9 @@ const arimo = Arimo({
 export const metadata: Metadata = {
   title: "Mait Club - A Coach in your Pocket",
   description: "Upload. Get AI Feedback. Train Smarter. AI-powered video analysis for athletes who want to train smarter and perform better.",
+  other:{
+    "facebook-domain-verification": "qnpjcc4ivdz0j7i2aespj6zp4rtz3e",
+  }
 };
 
 export default function RootLayout({

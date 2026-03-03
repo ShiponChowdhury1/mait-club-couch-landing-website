@@ -30,7 +30,7 @@ export default function HowItWorks() {
           How It Works
         </h2>
 
-        <div className="flex flex-col md:flex-row md:justify-center items-center gap-8 md:gap-24">
+        <div className="flex flex-col md:flex-row md:justify-center gap-8 md:gap-24">
           {steps.map((step, index) => (
             <div key={index} className="text-center w-full md:w-64 lg:w-72 relative flex flex-col items-center">
               {/* Connecting line - box theke box porjonto */}
